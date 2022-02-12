@@ -1,25 +1,22 @@
 # PPGTI1009 - Messaging seminar
 
-
 ## References
 
-**Messaging**
+### Messaging
 
-
-**Apache Kafka**
+### Apache Kafka
 
 - [Apache Kafka - Documentation][kafka-doc]
 - [GeekHunter - Apache Kafka][kafka-geekhunter]
 - [InfoQ - Uma introdução ao Apache Kafka, lições aprendidas em um ambiente de varejo][kafka-infoq]
 
-
-**RabbitMQ**
+### RabbitMQ
 
 - [Medium@iundarigun: Rabbit MQ - Parte I][rabbiqm-medium]
 - [RabbitMQ - Documentation][rabbitmq-doc]
 - [Spring Blog - Routing Topologies for Performance and Scalability with RabbitMQ][rabbitmq-spring]
 
-**Comparative**
+### Comparative
 
 - [Confluent - Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?][comparative-confluent]
 - [ProjectPro - Kafka vs RabbitMQ - A Head-to-Head Comparison for 2022][comparative-projectpro]
