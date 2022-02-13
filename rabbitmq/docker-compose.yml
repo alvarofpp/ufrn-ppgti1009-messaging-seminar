@@ -1,0 +1,60 @@
+---
+version: '3.6'
+
+networks:
+  ppgti-rabbitmq:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.9.13-management-alpine
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: ppgti
+      RABBITMQ_DEFAULT_PASS: ppgti
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./rabbitmq/data:/var/lib/rabbitmq
+      - ./rabbitmq/log:/var/log/rabbitmq
+    networks:
+      - ppgti-rabbitmq
+    healthcheck:
+      test: [ "CMD", "nc", "-z", "localhost", "5672" ]
+      interval: 5s
+      timeout: 15s
+      retries: 1
+
+  rabbitmq-consumer:
+    container_name: rabbitmq_consumer
+    build:
+      context: ./consumer
+    image: ppgti/rabbitmq-consumer
+    command: python app.py
+    networks:
+      - ppgti-rabbitmq
+    ports:
+      - 5001:5001
+    volumes:
+      - ./consumer/:/app
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    links:
+      - rabbitmq
+
+  rabbitmq-producer:
+    container_name: rabbitmq_producer
+    build:
+      context: ./producer
+    image: ppgti/rabbitmq-producer
+    command: python app.py
+    networks:
+      - ppgti-rabbitmq
+    ports:
+      - 5002:5002
+    volumes:
+      - ./producer/:/app
+    links:
+      - rabbitmq
