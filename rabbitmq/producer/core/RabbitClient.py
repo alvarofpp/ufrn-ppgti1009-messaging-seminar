@@ -8,8 +8,7 @@ from pika.credentials import PlainCredentials
 
 class RabbitClient:
     def __init__(self):
-        connection = self._get_connection()
-        self.channel = self._get_channel(connection)
+        self.channel = None
 
     def _get_connection(self) -> BlockingConnection:
         credentials = PlainCredentials(
@@ -30,16 +29,16 @@ class RabbitClient:
 
         return channel
 
+    def init(self) -> None:
+        connection = self._get_connection()
+        self.channel = self._get_channel(connection)
+
     def close(self) -> None:
         if self.channel is not None:
             self.channel.close()
             logging.info('Channel closed!')
 
     def send(self, message: str) -> None:
-        logging.basicConfig(
-            format='%(asctime)s | %(message)s',
-            level=logging.INFO,
-        )
         self.channel.basic_publish(
             exchange='',
             routing_key=config('RABBITMQ_QUEUE', 'default'),

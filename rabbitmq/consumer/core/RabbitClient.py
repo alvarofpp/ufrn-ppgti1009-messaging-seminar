@@ -8,8 +8,7 @@ from pika.credentials import PlainCredentials
 
 class RabbitClient:
     def __init__(self):
-        connection = self._get_connection()
-        self.channel = self._get_channel(connection)
+        self.channel = None
 
     def _get_connection(self) -> BlockingConnection:
         credentials = PlainCredentials(
@@ -38,12 +37,11 @@ class RabbitClient:
 
         return channel
 
+    def init(self) -> None:
+        connection = self._get_connection()
+        self.channel = self._get_channel(connection)
+
     def receive(self) -> None:
-        logging.basicConfig(
-            format='%(asctime)s | %(message)s',
-            # encoding='utf-8',
-            level=logging.INFO,
-        )
         logging.info('Waiting for messages. To exit press CTRL+C')
         self.channel.start_consuming()
 
