@@ -2,9 +2,8 @@ import logging
 import sys
 from time import sleep
 
-from pika.exceptions import AMQPConnectionError
-
 from core import RabbitClient
+from pika.exceptions import AMQPConnectionError
 
 
 if __name__ == '__main__':
