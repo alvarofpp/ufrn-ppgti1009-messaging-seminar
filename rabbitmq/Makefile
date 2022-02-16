@@ -1,8 +1,3 @@
-# Variables
-DOCKER_IMAGE_LINTER=alvarofpp/python-linter
-ROOT=$(shell pwd)
-LINT_COMMIT_TARGET_BRANCH=origin/main
-
 # Commands
 .PHONY: build
 build:
@@ -12,19 +7,19 @@ build:
 build-no-cache:
 	@docker-compose build --no-cache
 
-.PHONY:
+.PHONY: down
 down:
 	@docker-compose down
 
-.PHONY:
+.PHONY: send
 send:
 	@docker-compose run rabbitmq-producer
 
-.PHONY:
+.PHONY: up
 up:
 	@docker-compose up rabbitmq rabbitmq-consumer
 
-.PHONY:
+.PHONY: up-silent
 up-silent:
 	@docker-compose up -d rabbitmq rabbitmq-consumer
 
