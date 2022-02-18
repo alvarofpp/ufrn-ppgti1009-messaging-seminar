@@ -1,4 +1,4 @@
-# RabbitMQ "Hello World"
+# Kafka "Hello World"
 
 First you need to build the Docker images:
 
