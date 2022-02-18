@@ -9,12 +9,16 @@ make build
 After that, you can run the `rabbitmq` and `rabbitmq-consumer`:
 
 ```shell
-make up
-# or
-make up-silent
+docker-compose up rabbitmq
 ```
 
-In another terminal (if you used `make up`), you can test RabbitMQ:
+In another terminal:
+
+```shell
+docker-compose up rabbitmq-consumer
+```
+
+In another terminal you can test RabbitMQ:
 
 ```shell
 make send
