@@ -1,10 +1,27 @@
 # PPGTI1009 - Messaging seminar
 
+Seminar of Distributed Programming (PPGTI1009) course of Master's degree in Information Technology
+from the Federal University of Rio Grande do Norte (UFRN), with
+[Sergio Queiroz de Medeiros][ufrn-professor] as professor.
+
+Group:
+
+- Álvaro Ferreira Pires de Paiva
+  - Enrolment: 20211028885
+  - E-mail: alvarofepipa@gmail.com
+- Italo Oliveira Fernandes
+  - Enrolment: 20211028965
+  - E-mail: italo.oliveira.029@ufrn.edu.br
+
 ## References
 
+References used in the seminar.
+
 ### Messaging
+
 - [Medium@Thiago Brito: #01 — Mensageria][menssaging]
-- [Gregor Hohpe - Enterprise Integration Patterns][menssaging-patterns]
+- [Gregor Hohpe - Enterprise Integration Patterns][messaging-patterns]
+
 ### Apache Kafka
 
 - [Apache Kafka - Documentation][kafka-doc]
@@ -23,6 +40,8 @@
 - [ProjectPro - Kafka vs RabbitMQ - A Head-to-Head Comparison for 2022][comparative-projectpro]
 - [Stackshare - Kafka vs RabbitMQ][comparative-stackshare]
 - [Upsolver - Kafka vs. RabbitMQ: Architecture, Performance & Use Cases][comparative-upsolver]
+
+[ufrn-professor]: https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2510306
 
 [menssaging]: https://medium.com/@devbrito91/mensageria-1330c6032049
 [messaging-patterns]: https://www.enterpriseintegrationpatterns.com/
