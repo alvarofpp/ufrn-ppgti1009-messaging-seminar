@@ -2,7 +2,7 @@
 
 Seminar of Distributed Programming (PPGTI1009) course of Master's degree in Information Technology
 from the Federal University of Rio Grande do Norte (UFRN), with
-[Sergio Queiroz de Medeiros][ufrn-professor] as professor.
+[Frederico Araujo Da Silva Lopes][ufrn-professor] as professor.
 
 Group:
 
@@ -19,7 +19,7 @@ References used in the seminar.
 
 ### Messaging
 
-- [Medium@Thiago Brito: #01 — Mensageria][menssaging]
+- [Medium@Thiago Brito: #01 — Mensageria][messaging]
 - [Gregor Hohpe - Enterprise Integration Patterns][messaging-patterns]
 
 ### Apache Kafka
@@ -43,7 +43,7 @@ References used in the seminar.
 
 [ufrn-professor]: https://sigaa.ufrn.br/sigaa/public/docente/portal.jsf?siape=2510306
 
-[menssaging]: https://medium.com/@devbrito91/mensageria-1330c6032049
+[messaging]: https://medium.com/@devbrito91/mensageria-1330c6032049
 [messaging-patterns]: https://www.enterpriseintegrationpatterns.com/
 
 [kafka-doc]: https://kafka.apache.org/documentation/
