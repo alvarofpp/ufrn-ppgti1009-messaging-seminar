@@ -25,7 +25,7 @@
 - [Upsolver - Kafka vs. RabbitMQ: Architecture, Performance & Use Cases][comparative-upsolver]
 
 [menssaging]: https://medium.com/@devbrito91/mensageria-1330c6032049
-[messaging-patterns]: https://www.enterpriseintegrationpatterns.com/
+[menssaging-patterns]: https://www.enterpriseintegrationpatterns.com/
 
 [kafka-doc]: https://kafka.apache.org/documentation/
 [kafka-geekhunter]: https://blog.geekhunter.com.br/apache-kafka/
