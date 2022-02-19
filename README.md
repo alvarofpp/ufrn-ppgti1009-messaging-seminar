@@ -3,7 +3,8 @@
 ## References
 
 ### Messaging
-
+- [Medium@Thiago Brito: #01 — Mensageria][menssaging]
+- [Gregor Hohpe - Enterprise Integration Patterns][menssaging-patterns]
 ### Apache Kafka
 
 - [Apache Kafka - Documentation][kafka-doc]
@@ -22,6 +23,9 @@
 - [ProjectPro - Kafka vs RabbitMQ - A Head-to-Head Comparison for 2022][comparative-projectpro]
 - [Stackshare - Kafka vs RabbitMQ][comparative-stackshare]
 - [Upsolver - Kafka vs. RabbitMQ: Architecture, Performance & Use Cases][comparative-upsolver]
+
+[menssaging]: https://medium.com/@devbrito91/mensageria-1330c6032049
+[messaging-patterns]: https://www.enterpriseintegrationpatterns.com/
 
 [kafka-doc]: https://kafka.apache.org/documentation/
 [kafka-geekhunter]: https://blog.geekhunter.com.br/apache-kafka/
